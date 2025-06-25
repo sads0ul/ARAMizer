@@ -1,0 +1,206 @@
+﻿Diagnose log at 2025-06-25T13:21:46Z
+
+AppPath: C:\Program Files\Git\mingw64\bin\git-credential-manager.exe
+InstallDir: C:\Program Files\Git\mingw64\bin\
+Version: 2.6.1+786ab03440ddc82e807a97c0e540f5247e44cec6
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 19045)
+Reading environment variables... OK
+ Variables:
+PROCESSOR_ARCHITEW6432=AMD64
+DriverData=C:\Windows\System32\Drivers\DriverData
+COMPUTERNAME=DESKTOP-I05CSKV
+GIT_TRACE2_PARENT_SID=57f3f0a0-596a-4bf9-aec9-10d1b5304c4f
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+POSTGIS_GDAL_ENABLED_DRIVERS=GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid
+OneDrive=C:\Users\wojtek\OneDrive
+HOMEPATH=\Users\wojtek
+SESSIONNAME=Console
+TMP=C:\Users\wojtek\AppData\Local\Temp
+PROCESSOR_REVISION=2100
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+GEOSERVER_DATA_DIR=C:\Program Files (x86)\GeoServer 2.15.1\data_dir
+PROJ_LIB=C:\Program Files\PostgreSQL\16\share\contrib\postgis-3.4\proj
+CURL_CA_BUNDLE=C:\Program Files\PostgreSQL\16\ssl\certs\ca-bundle.crt
+GIT_EXEC_PATH=C:/Program Files/Git/mingw64/libexec/git-core
+TEMP=C:\Users\wojtek\AppData\Local\Temp
+LOCALAPPDATA=C:\Users\wojtek\AppData\Local
+MSYSTEM=MINGW64
+TERM=xterm-256color
+PROCESSOR_IDENTIFIER=AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD
+GEOSERVER_HOME=C:\Program Files (x86)\GeoServer 2.15.1
+VBOX_HWVIRTEX_IGNORE_SVM_IN_USE=1
+JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.23.9-hotspot
+USERDOMAIN=DESKTOP-I05CSKV
+JetBrains Rider=X:\JetBrainsRider\JetBrains Rider 2024.3.5\bin;
+Path=C:/Program Files/Git/mingw64/libexec/git-core;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\wojtek\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.23.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jre-17.0.11.9-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Users\wojtek\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\dotnet\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;G:\Nowy folder\bin;G:\matlab\bin;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files (x86)\ENCARD\;C:\Program Files\ENCARD\;C:\Program Files\PostgreSQL\16\bin;C:\Users\wojtek\Desktop\GRZEMPOWSKI;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\OSGeo4W\apps;C:\Users\wojtek\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\Scripts;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\Git\cmd;C:\Users\wojtek\AppData\Local\Microsoft\WindowsApps;C:\Users\wojtek\.dotnet\tools;C:\Program Files\PostgreSQL\16\bin;C:\Users\wojtek\Desktop\GRZEMPOWSKI;C:\Users\wojtek\AppData\Roaming\npm;X:\snap\esa-snap\bin;C:\Users\wojtek\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\Scripts;C:\Users\wojtek\AppData\Local\GitHubDesktop\bin;C:\Program Files\QGIS 3.34.13\apps\Python312;C:\Users\wojtek\AppData\Local\Pandoc\;X:\JetBrainsRider\JetBrains Rider 2024.3.5\bin;
+TERM_PROGRAM=vscode
+PROCESSOR_LEVEL=25
+NUMBER_OF_PROCESSORS=12
+TMPDIR=C:\Users\wojtek\AppData\Local\Temp
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+PROMPT=$P$G
+TERM_PROGRAM_VERSION=1.96.0
+GIT_ASKPASS=c:\Program Files\Microsoft VS Code\resources\app\extensions\git\dist\askpass.sh
+ProgramFiles(x86)=C:\Program Files (x86)
+PUBLIC=C:\Users\Public
+VSCODE_GIT_IPC_HANDLE=\\.\pipe\vscode-git-230d7bcbe0-sock
+FPS_BROWSER_USER_PROFILE_STRING=Default
+CommonProgramFiles=C:\Program Files (x86)\Common Files
+__PSLockDownPolicy=0
+CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_13760_DDHDUYMEXECXEQSI
+VSCODE_GIT_ASKPASS_MAIN=c:\Program Files\Microsoft VS Code\resources\app\extensions\git\dist\askpass-main.js
+PLINK_PROTOCOL=ssh
+ProgramData=C:\ProgramData
+ProgramW6432=C:\Program Files
+ProgramFiles=C:\Program Files (x86)
+VSCODE_GIT_ASKPASS_NODE=C:\Program Files\Microsoft VS Code\Code.exe
+SystemRoot=C:\Windows
+ORIGINAL_XDG_CURRENT_DESKTOP=undefined
+HOME=C:\Users\wojtek
+CommonProgramW6432=C:\Program Files\Common Files
+LOGONSERVER=\\DESKTOP-I05CSKV
+GDAL_DATA=C:\Program Files\PostgreSQL\16\gdal-data
+POSTGIS_ENABLE_OUTDB_RASTERS=1
+COLORTERM=truecolor
+USERDOMAIN_ROAMINGPROFILE=DESKTOP-I05CSKV
+APPDATA=C:\Users\wojtek\AppData\Roaming
+HOMEDRIVE=C:
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+USERNAME=wojtek
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+PROCESSOR_ARCHITECTURE=x86
+USERPROFILE=C:\Users\wojtek
+OS=Windows_NT
+ComSpec=C:\Windows\system32\cmd.exe
+SystemDrive=C:
+windir=C:\Windows
+LANG=en_US.UTF-8
+ALLUSERSPROFILE=C:\ProgramData
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\wojtek\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\wojtek\AppData\Local\Temp\93d0469c9127cb206de2f16b'... OK
+Reading from temporary file 'C:\Users\wojtek\AppData\Local\Temp\93d0469c9127cb206de2f16b'... OK
+Deleting temporary file 'C:\Users\wojtek\AppData\Local\Temp\93d0469c9127cb206de2f16b'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\wojtek
+UserDataDirectoryPath: C:\Users\wojtek\.gcm
+GetCurrentDirectory(): X:\ARAMizer\ARAMizer
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com...Sending HEAD request to https://example.com... OK
+ OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:55993/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.49.0.windows.1'
+Locating current repository...Git repository at 'X:/ARAMizer/ARAMizer/.git'
+ OK
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=openssl
+file:C:/Program Files/Git/etc/gitconfig	http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=true
+file:C:/Program Files/Git/etc/gitconfig	core.editor=nano.exe
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=master
+file:C:/Users/wojtek/.gitconfig	user.email=wojciechsitko1@gmail.com
+file:C:/Users/wojtek/.gitconfig	user.name=wojtekSit
+file:C:/Users/wojtek/.gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Users/wojtek/.gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Users/wojtek/.gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Users/wojtek/.gitconfig	filter.lfs.required=true
+file:C:/Users/wojtek/.gitconfig	credential.helper=
+file:C:/Users/wojtek/.gitconfig	credential.helper=C:/Program\ Files/Git/mingw64/bin/git-credential-manager.exe
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://github.com/sads0ul/ARAMizer.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.main.remote=origin
+file:.git/config	branch.main.merge=refs/heads/main
+file:.git/config	branch.main.vscode-merge-base=origin/main
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\wojtek\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\wojtek\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+

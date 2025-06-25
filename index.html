@@ -2,15 +2,146 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My GitHub Website</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>ARAMIZER</title>
+    <style>
+        body {
+            background-image: url('images/background.png');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        input {
+            margin: 5px;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .player-section {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Black with 50% opacity */
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            text-align: center;
+
+
+        }
+
+        .input {
+            margin-top: 250px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple site hosted on GitHub Pages.</p>
+
+    <div class="input">
+        <input type="text" id="playerA" placeholder="PLAYER A">
+        <input type="text" id="playerB" placeholder="PLAYER B">
+        <input type="text" id="playerC" placeholder="PLAYER C">
+        <input type="text" id="playerD" placeholder="PLAYER D">
+        <input type="text" id="playerE" placeholder="PLAYER E">
+    </div>
+
+    <button onclick="assignClasses()">Assign Classes</button>
+
+    <div id="results"></div>
+
+    <script>
+        const championsByClass = {
+            "Artillery": ["Hwei", "Jayce", "Mel", "Vel'Koz", "Xerath", "Ziggs", "Lux", "Varus"],
+            "Assassin": [
+                "Akali", "Ekko", "Evelynn", "Fizz", "Kassadin", "Katarina", "Kha'Zix", "Naafiri", "Nocturne", "Qiyana",
+                "Shaco", "Talon", "Zed", "Pyke", "Diana", "Rengar", "Yone", "Aurora", "Akshan"
+            ],
+            "Battlemage": ["Anivia", "Aurelion Sol", "Cassiopeia", "Karthus", "Malzahar", "Rumble", "Ryze", "Swain", "Taliyah", "Viktor", "Vladimir"],
+            "Burst": [
+                "Ahri", "Annie", "Brand", "LeBlanc", "Lissandra", "Orianna", "Syndra", "Twisted Fate", "Veigar", "Vex", "Zoe",
+                "Lux", "Aurora", "Neeko", "Karma", "Seraphine", "Sylas"
+            ],
+            "Catcher": ["Bard", "Blitzcrank", "Ivern", "Morgana", "Rakan", "Thresh", "Zyra", "Pyke", "Neeko", "Jhin"],
+            "Diver": [
+                "Briar", "Camille", "Elise", "Hecarim", "Irelia", "Jarvan IV", "Lee Sin", "Olaf", "Pantheon", "Rek'Sai",
+                "Renekton", "Vi", "Warwick", "Wukong", "Xin Zhao", "Diana", "Rengar", "Ambessa"
+            ],
+            "Enchanter": [
+                "Janna", "Lulu", "Milio", "Nami", "Renata Glasc", "Sona", "Soraka", "Yuumi", "Karma", "Seraphine", "Senna"
+            ],
+            "Juggernaut": [
+                "Aatrox", "Darius", "Dr. Mundo", "Garen", "Illaoi", "Mordekaiser", "Nasus", "Sett", "Shyvana", "Trundle", "Udyr",
+                "Urgot", "Volibear", "Yorick", "Skarner"
+            ],
+            "Marksman": [
+                "Aphelios", "Ashe", "Caitlyn", "Corki", "Draven", "Ezreal", "Jinx", "Kai'Sa", "Kalista", "Kindred", "Kog'Maw",
+                "Lucian", "Miss Fortune", "Samira", "Sivir", "Smolder", "Tristana", "Twitch", "Vayne", "Xayah", "Zeri",
+                "Varus", "Akshan", "Jhin", "Senna"
+            ],
+            "Skirmisher": [
+                "Bel'Veth", "Fiora", "Gwen", "Jax", "Kayn", "Kled", "Lillia", "Master Yi", "Nilah", "Riven", "Tryndamere",
+                "Viego", "Yasuo", "Yone", "Sylas", "Ambessa", "K'Sante"
+            ],
+            "Specialist": ["Azir", "Cho'Gath", "Fiddlesticks", "Gangplank", "Gnar", "Graves", "Heimerdinger", "Kayle", "Kennen", "Nidalee", "Quinn", "Singed", "Teemo", "Zilean"],
+            "Vanguard": [
+                "Alistar", "Amumu", "Gragas", "Leona", "Malphite", "Maokai", "Nautilus", "Nunu & Willump", "Ornn", "Rammus",
+                "Rell", "Sejuani", "Sion", "Zac", "Skarner"
+            ],
+            "Warden": [
+                "Braum", "Galio", "Poppy", "Shen", "Tahm Kench", "Taric", "K'Sante"
+            ]
+        };
+
+
+        const availableClasses = Object.keys(championsByClass);
+
+        function assignClasses() {
+            const players = [
+                document.getElementById("playerA").value || "Player A",
+                document.getElementById("playerB").value || "Player B",
+                document.getElementById("playerC").value || "Player C",
+                document.getElementById("playerD").value || "Player D",
+                document.getElementById("playerE").value || "Player E"
+            ];
+
+            let used = new Set();
+            const resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = "";
+
+            players.forEach(player => {
+                let classType;
+                // Ensure unique classes (if possible)
+                do {
+                    classType = availableClasses[Math.floor(Math.random() * availableClasses.length)];
+                } while (used.has(classType) && used.size < availableClasses.length);
+                used.add(classType);
+
+                const champs = championsByClass[classType] || [];
+                const champList = champs.join(", ");
+
+                resultsDiv.innerHTML += `
+          <div class="player-section">
+            <h2>${player} - ${classType}</h2>
+            <p>${champList}</p>
+          </div>
+        `;
+            });
+        }
+    </script>
+
 </body>
 
 </html>
